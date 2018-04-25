@@ -1,0 +1,6 @@
+<div class = "alert alert-info">
+  <a href="#" [routerLink]="['/login']" class="btn btn-primary" *ngIf = "!toggleMenuItems">Login</a>
+  <a href="#" [routerLink]="['/register']" class="btn btn-primary" *ngIf = "!toggleMenuItems">Register</a>
+  <a href="#" [routerLink]="['/home']" class="btn btn-primary" *ngIf = "toggleMenuItems">Home</a>
+  <a class="btn btn-primary" (click) = "logout()" *ngIf = "toggleMenuItems">Logout</a>
+</div>
